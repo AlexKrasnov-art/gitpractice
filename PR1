@@ -1,2 +1,11 @@
 git clone git@github.com:AlexKrasnov-art/gitpractice.git person1
 cd person1
+echo "Hello from file1" > file1.txt
+echo "Hello from file2" > file2.txt
+echo "Hello from file3" > file3.txt
+git status
+git add .
+git commit -m "Initial commit: add 3 files"
+# Убедимся, что у нас есть ветка main (если нет):
+git branch -M main
+git push -u origin main
